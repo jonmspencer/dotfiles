@@ -45,14 +45,14 @@ alias casks='open /opt/homebrew-cask/Caskroom'
 # Standard Shell
 alias c='clear'
 alias l='ls -l'
-alias la='ls -al'
+alias ll='ls -la'
 alias bloat='du -k | sort -nr | more'
 
 # Bundle Exec
 alias be="bundle exec"
 
 # Git
-alias g='git status -s'
+alias gs='git status -s'
 alias gb='git branch'
 alias gc='git commit -m'
 alias gp='git pr'
