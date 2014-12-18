@@ -47,19 +47,27 @@ alias c='clear'
 alias l='ls -l'
 alias ll='ls -la'
 alias bloat='du -k | sort -nr | more'
+alias cdp='cd Documents/Dev/Projects'
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO'
 
 # Bundle Exec
 alias be="bundle exec"
 
 # Git
 alias gs='git status -s'
+alias ga='git add .'
 alias gb='git branch'
 alias gc='git commit -m'
+alias gd='git diff'
 alias gp='git pr'
+alias gr='git remote -v'
 alias gca='git commit -am'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias grpr='git remote prune origin'
+alias grso='git remote show origin'
+alias grao='git remote add origin'
 
 # Gitignores
 alias objc-ignore='cp ~/code/github-projects/gitignore/Objective-C.gitignore .gitignore'
