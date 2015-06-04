@@ -27,8 +27,8 @@ export PATH=$GOPATH/bin:$PATH
 export PATH=$PATH:/usr/local/Cellar/go/1.2/libexec/bin
 
 # Configure chruby
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+# source /usr/local/share/chruby/chruby.sh
+# source /usr/local/share/chruby/auto.sh
 
 # Setup NODE_PATH
 export NODE_PATH=$NODE_PATH:/usr/local/share/npm/lib/node_modules
@@ -47,7 +47,7 @@ alias c='clear'
 alias l='ls -l'
 alias ll='ls -la'
 alias bloat='du -k | sort -nr | more'
-alias cdp='cd Documents/Dev/Projects'
+alias cddp='cd Documents/Projects/0-Web'
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO'
 
@@ -56,17 +56,20 @@ alias be="bundle exec"
 
 # Git
 alias gs='git status -s'
-alias ga='git add .'
+alias ga='git add'
 alias gb='git branch'
 alias gc='git commit -m'
 alias gd='git diff'
-alias gf='git fetch'
 alias gp='git pr'
 alias gr='git remote -v'
+alias gaa='git add --all'
+alias gfo='git fetch origin'
+alias gpo='git push origin'
 alias gbm='git branch -m'
 alias gca='git commit -am'
 alias gco='git checkout'
 alias gcob='git checkout -b'
+alias gpro='git pull --rebase origin'
 alias grpr='git remote prune origin'
 alias grso='git remote show origin'
 alias grao='git remote add origin'
@@ -140,7 +143,7 @@ autoload -U colors && colors
 setopt prompt_subst
 
 # Set default ruby
-chruby 2.1
+# chruby 2.1
 
 # Display Virtualenv cleanly in right column
 function virtualenv_info {
