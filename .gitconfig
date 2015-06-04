@@ -1,6 +1,6 @@
 [user]
-  name = Cale J Spencer
-  email = calejspencer@gmail.com
+  name = Jon M Spencer
+  email = jon@jonspencer.us
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
